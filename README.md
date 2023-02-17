@@ -24,6 +24,7 @@ https://dribbble.com/shots/19996253-Netflix-Gamified-Dashboard
 ## Schémas de la base de données :
 
 # getflixProjectimage.png
+![db](https://user-images.githubusercontent.com/66112691/219664683-dd63d6f3-ccd4-4b19-ad84-35260486eafa.PNG)
 
 ## Documentation générale du projet
 
