@@ -23,7 +23,7 @@ https://dribbble.com/shots/19996253-Netflix-Gamified-Dashboard
 
 ## Schémas de la base de données :
 
-# getflixProjectimage.png
+![Texte alternatif](my-moviz\public\db.PNG"uml db")
 
 ## Documentation générale du projet
 
