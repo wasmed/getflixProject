@@ -1,6 +1,4 @@
-
 package com.example.controller;
-
 
 import com.example.entity.User;
 
@@ -20,103 +18,98 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import com.example.repository.UserRepository;
+import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties.Authentication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-
-
-@CrossOrigin(origins="http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v1/")
 public class UserController {
-    
-     @Autowired
+
+    @Autowired
     PasswordEncoder passwordEncoder;
-   
+
     @Autowired
     private UserRepository userRepository;
-    
-    
-       //get all users
-     @GetMapping("/clients")
-    public List<User> getAllClients(){
-         return userRepository.findAll();
+
+    //get all users
+    @GetMapping("/clients")
+    public List<User> getAllClients() {
+        return userRepository.findAll();
     }
-    
+
     //get user API by id
-     @GetMapping("/client/{id}")
-    User getClientById(@PathVariable Long id){
-         return userRepository.findById(id)
-                 .orElseThrow(()-> new UserNotFoundException(id));
+    @GetMapping("/client/{id}")
+    User getClientById(@PathVariable Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException(id));
     }
-    
-    
+
     //create user rest API
-     @PostMapping("/clients")
-    public  ResponseEntity<?> createClient(@RequestBody User client){
-            List<User> myList = userRepository.findByMailAndPassword(client.getNom(),client.getPrenom()); 
-            List<User> myList1 = userRepository.findByMail(client.getMail()); 
-             if (!myList.isEmpty() && !myList1.isEmpty()) {
-                 return new ResponseEntity<>("Nom d'utilisateur déjà utilisé!",
-                    HttpStatus.BAD_REQUEST); 
-               
+    @PostMapping("/clients")
+    public ResponseEntity<?> createClient(@RequestBody User client) {
+        List<User> myList = userRepository.findByMailAndPassword(client.getNom(), client.getPrenom());
+        List<User> myList1 = userRepository.findByMail(client.getMail());
+        
+        if (!myList.isEmpty() && !myList1.isEmpty()) {
+            return new ResponseEntity<>("Nom d'utilisateur déjà utilisé!",
+                    HttpStatus.BAD_REQUEST);
+
         } else {
-                client.setPassword(passwordEncoder.encode(client.getPassword()));
-                userRepository.save(client);
-         
+            client.setPassword(passwordEncoder.encode(client.getPassword()));
+            userRepository.save(client);
+
+        }
+        return ResponseEntity.ok("L'utilisateur a été enregistré avec succès!");
     }
-          return ResponseEntity.ok("L'utilisateur a été enregistré avec succès!");  
-    }
-    
-    
-    
-      //login user api 
-     @PostMapping("/login")
+
+  
+
+    //login user api 
+      @PostMapping("/login")
     public ResponseEntity<?> LoginClient(@RequestBody User client){
+          String enteredPassword= client.getPassword();
+          String storedPassword = userRepository.findByPassword(client.getPassword());
          
-          String user= userRepository.findByPassword(passwordEncoder.encode(client.getPassword()));
-         
-          List<User> myList = userRepository.findByMailAndPassword(client.getMail(),user); 
+         // List<User> myList = userRepository.findByMailAndPassword(client.getMail(),); 
+          if(passwordEncoder.matches(enteredPassword, storedPassword)){
+                    return ResponseEntity.ok("vous etes logé avec succès!");
+          }
           
-          
-          if (!myList.isEmpty()) {
-                
-               return new ResponseEntity<>(" l'utilisateur non trouvé!",
-                    HttpStatus.BAD_REQUEST); 
-               
-        } else  {
+        else  {
               
-                return ResponseEntity.ok("vous etes logé avec succès!"); 
+                return ResponseEntity.ok("vous n etes pas logé !"); 
         
     }
     }
-   
-    
- // put user api by id
+    // put user api by id
     @PutMapping("/client/{id}")
-    User UpdateClient(@RequestBody User newClient,@PathVariable Long id){
-        
-          return userRepository.findById(id)
-                  
-                  .map(client->{
-                       client.setNom(newClient.getNom());
-                       client.setMail(newClient.getMail());
-                       client.setPrenom(newClient.getPrenom());
-                       client.setPassword(passwordEncoder.encode(newClient.getPassword()));
-                     return userRepository.save(client);
-                             
-                  }).orElseThrow(()-> new UserNotFoundException(id));
+    User UpdateClient(@RequestBody User newClient, @PathVariable Long id) {
+
+        return userRepository.findById(id)
+                .map(client -> {
+                    client.setNom(newClient.getNom());
+                    client.setMail(newClient.getMail());
+                    client.setPrenom(newClient.getPrenom());
+                    client.setPassword(passwordEncoder.encode(newClient.getPassword()));
+                    return userRepository.save(client);
+
+                }).orElseThrow(() -> new UserNotFoundException(id));
     }
-    
+
     //delete user api
     @DeleteMapping("/client/{id}")
-    String deleteClient(@PathVariable Long id){
-          if(!userRepository.existsById(id)){
-              throw new UserNotFoundException(id);
-          }
-            userRepository.deleteById(id);
-            return "User with id: "+id+"has been deleted ";
-  
+    String deleteClient(@PathVariable Long id) {
+        if (!userRepository.existsById(id)) {
+            throw new UserNotFoundException(id);
+        }
+        userRepository.deleteById(id);
+        return "User with id: " + id + "has been deleted ";
+
     }
-  
+
 }
