@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import ClientService from '../services/ClientService';
+import {Navigate, useNavigate} from 'react-router-dom';
+import Login from './Login';
+import ListClients from './ListClients';
 
 class Signup extends Component {
-
+   
       constructor(props){
         super(props)
 
 
         this.state={
+              formSubmitted:false ,
               nom:'',
               prenom: '',
               mail:'',
@@ -21,13 +25,16 @@ class Signup extends Component {
       }
 
       saveClient= (c)=>{
+       // const [formSubmitted, setFormSubmitted] = useState(false);
         c.preventDefault();
-        let clients = {nom: this.state.nom, prenom: this.state.prenom, mail: this.state.mail};
+        let clients = {nom: this.state.nom, prenom: this.state.prenom, mail: this.state.mail ,password: this.state.password};
         console.log('clients => '+JSON.stringify(clients));
+        console.log(clients);
         
-        ClientService.createClient(clients).then(res =>{
-            this.props.history.push('/clients');
-        } );
+        ClientService.createClient(clients);
+       this.setState({ formSubmitted: true });
+        
+       
       }
 
    
@@ -41,17 +48,24 @@ class Signup extends Component {
 
 chageEmailHandler=(event)=>{
     this.setState({mail:event.target.value});
+
 }
-cancel(){
-    this.props.history.push('/clients');
-}
+ chagePaaswordHandler=(event)=>{
+         this.setState({password:event.target.value});
+ }
+
+
     render() {
         return (
 
            
 
             <div>
-           
+                    {
+                        this.state.formSubmitted ?(<ListClients/>) : (
+
+                       
+                  
             <div className="container">
                 <h1 className="title1">Manage Clients</h1>
                 <hr />
@@ -76,17 +90,21 @@ cancel(){
                         <span className="text-danger" ></span>
                     </div>
     
-    
+                    <div className="mb-4 col-4">
+                        <label >Password</label>
+                        <input type="password" name='password' placeholder="password" className="form-control" value={this.state.password} onChange={this.chagePaaswordHandler}/>
+                        <span className="text-danger" ></span>
+                    </div>
                     <div>
                         <button type="submit" className="btn btn-primary col-2" onClick={this.saveClient}>Save</button>
-                        <a  className="btn btn-danger col-2" onClick={this.cancel.bind(this)}>Cancel</a>
+                        <a  className="btn btn-danger col-2">Cancel</a>
                     </div>
                 </form>
                 <hr />
                 <div  className="alert-danger"/>
             </div>
        
-               
+       ) }       
     </div>
  
 

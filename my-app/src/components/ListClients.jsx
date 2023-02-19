@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import ClientService from '../services/ClientService';
+import {Link} from 'react-router-dom';
 
 class ListClients extends Component {
 
@@ -11,7 +12,7 @@ class ListClients extends Component {
         this.state={
               clients: []
         }
-        this.addClient=this.addClient.bind(this);
+       // this.addClient=this.addClient.bind(this);
       }
 
 
@@ -24,17 +25,12 @@ class ListClients extends Component {
        
    }
 
-   addClient(){
-     
-       this.props.history.push('/add-client');
-   }
-
     render() {
         return (
             <div>
                   <h2 className='text-center'> clients</h2>
                 <div className="row">
-                <button className="btn btn-primary" onClick={this.addClient} >  add client    </button>
+                <Link  to = '/add-client' className="btn btn-primary"  >  add client   </Link>
                  </div>
     <div className="row">
         <table className="table table-striped table-bordered">
