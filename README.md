@@ -23,12 +23,8 @@ https://dribbble.com/shots/19996253-Netflix-Gamified-Dashboard
 
 ## Schémas de la base de données :
 
-<<<<<<< HEAD
 ![Texte alternatif](my-moviz\public\db.PNG"uml db")
-=======
-# getflixProjectimage.png
-![db](https://user-images.githubusercontent.com/66112691/219664683-dd63d6f3-ccd4-4b19-ad84-35260486eafa.PNG)
->>>>>>> 7bfbbc3c691d2abe754cb9450a5a370f958eb6d8
+
 
 ## Documentation générale du projet
 
@@ -37,5 +33,6 @@ La documentation générale du projet peut être trouvée dans le fichier /READM
 ## Sources
 
 Les sources du projet peuvent être trouvées dans le dossier src à la racine du projet.
+
 Dribbble
 Netflix Gamified Dashboard
