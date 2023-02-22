@@ -15,6 +15,7 @@ import javax.persistence.Table;
 @Table(name = "filmData")
 public class Films {
     
+
      @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -117,5 +118,11 @@ public class Films {
     public void setSeries(String series) {
         this.series = series;
     }
+
+  
+
+   
+    
+    
     
 }
