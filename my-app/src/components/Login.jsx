@@ -21,8 +21,6 @@ class Login extends Component {
         c.preventDefault();
         let clients = { mail: this.state.mail ,password: this.state.password};
         console.log('clients => '+JSON.stringify(clients));
-
-        
         ClientService.loginClient(clients);
         this.setState({ formSubmitted: true });
       }

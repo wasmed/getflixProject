@@ -1,29 +1,42 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom';
-import Signup from './components/Signup';
-import ListClients from './components/ListClients';
-import Login from './components/Login';
-import HeaderComponent from './components/HeaderComponent';
-import FooterComponent from './components/FooterComponent';
+import Home from './components/Home';
+import SigninForm from './components/SigninForm';
+import SignupForm from './components/SignupForm';
+import Abonnement from './components/Abonnement';
+import UserPage from './components/UserPage';
+import Payment from './components/payment';
+import ForgotPassword from './components/ForgotPassword';
+
 
 function App() {
   return (
-
+<Router>
     <div>
-      <Router>
-           
-          <div className="container ">
+             
             <Routes>
-              <Route path='/'  element={ <ListClients/>} ></Route>
-              <Route path='/clients' element={ <ListClients/>} ></Route>
-              <Route path='/add-client' element={<Signup/>} ></Route>
-              <Route path='/login-client' element={<Login/>} ></Route>
-            </Routes>
-          </div>
+              <Route exact path='/'  element={ <Home/> } >
+                  
+              </Route>
+              
+              <Route path='/login' element={ <SigninForm />} ></Route>
+              <Route path='/signup' element={<SignupForm />} ></Route>
+              <Route path='/abonnement' element={<Abonnement/>} ></Route>
+              <Route path='/userPage' element={<UserPage/>} ></Route>
+              <Route path='/paiement' element={<Payment/>} ></Route>
+              <Route path='/forgetPassword' element={<ForgotPassword />} ></Route>
+            
+          
       
-      </Router>
+    </Routes>
+    
     </div>
+
+   
+</Router>
+
+
   );
 }
 
