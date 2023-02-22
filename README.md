@@ -14,7 +14,7 @@
 https://dribbble.com/shots/19996253-Netflix-Gamified-Dashboard
 
 ## Schémas de la base de données 
-![Texte alternatif](my-app\public\db.PNG"uml db")
+![db](https://user-images.githubusercontent.com/66112691/220500066-da14d35c-bdcd-43f3-8c62-ece299abf2e5.PNG)
 
 ## Documentation générale du projet
 * * La documentation générale du projet peut être trouvée dans le fichier /README.md. Cette documentation contient des informations sur l'installation et le déploiement de l'application, ainsi que sur les fonctionnalités de l'application.
