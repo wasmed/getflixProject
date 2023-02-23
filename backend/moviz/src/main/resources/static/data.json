@@ -1,0 +1,392 @@
+{
+"page": 1,
+"results": [
+{
+"backdrop_path": "/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg",
+"first_air_date": "2023-01-15",
+"genre_ids": [
+18,
+10759
+],
+"id": 100088,
+"name": "The Last of Us",
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "The Last of Us",
+"overview": "Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.",
+"popularity": 4908.484,
+"poster_path": "/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+"vote_average": 8.8,
+"vote_count": 1951
+},
+{
+"backdrop_path": "/3FLHePl9Y3n4BidLVjIA9qSRDOE.jpg",
+"first_air_date": "2021-08-03",
+"genre_ids": [
+10766
+],
+"id": 130542,
+"name": "Bhagya Lakshmi",
+"origin_country": [
+"IN"
+],
+"original_language": "hi",
+"original_name": "Bhagya Lakshmi",
+"overview": "Hailing from a middle-class family, Lakshmi’s life is upended when she realises that her marriage to Rishi Oberoi, an industrialist’s son, is a sham to keep his death at bay.",
+"popularity": 2039.649,
+"poster_path": "/7wuKrFvbX7kAIF0ctotARsqayPo.jpg",
+"vote_average": 4.9,
+"vote_count": 22
+},
+{
+"backdrop_path": "/tLL91JBiCCvBF7oKSN6dFR7yd8c.jpg",
+"first_air_date": "2021-12-20",
+"genre_ids": [
+10764
+],
+"id": 153870,
+"name": "Shark Tank India",
+"origin_country": [
+"IN"
+],
+"original_language": "hi",
+"original_name": "Shark Tank India",
+"overview": "Aspiring entrepreneurs from India pitch their business models to a panel of investors and persuade them to invest money in their idea.",
+"popularity": 1512.076,
+"poster_path": "/kDZhUEwqWrRkG6W2Y0WIYTstb0K.jpg",
+"vote_average": 7.2,
+"vote_count": 9
+},
+{
+"backdrop_path": "/igmqMTV2Ukf5Id4WwQi7MUAJQAX.jpg",
+"first_air_date": "2021-10-27",
+"genre_ids": [
+18
+],
+"id": 197109,
+"name": "Yeh Rishta Kya Kehlata Hai",
+"origin_country": [
+"IN"
+],
+"original_language": "hi",
+"original_name": "ये रिश्ता क्या कहलाता है",
+"overview": "A personal tragedy creates a rift in Abhimanyu and Akshara's marital life. Years later, when destiny offers a second chance, will the duo embrace love?",
+"popularity": 1290.654,
+"poster_path": "/6ZfiG4P7jivJV0wgcNMSiS2Owhh.jpg",
+"vote_average": 4.8,
+"vote_count": 12
+},
+{
+"backdrop_path": "/zJNEXWx3YyWGQioCbutFd5dcNYS.jpg",
+"first_air_date": "2022-03-21",
+"genre_ids": [
+10766,
+10759,
+10751
+],
+"id": 157059,
+"name": "Poliana Moça",
+"origin_country": [
+"BR"
+],
+"original_language": "pt",
+"original_name": "Poliana Moça",
+"overview": "",
+"popularity": 1394.063,
+"poster_path": "/17yQZnnodzS1ZrKcpqHnQV8eQGN.jpg",
+"vote_average": 6.8,
+"vote_count": 20
+},
+{
+"backdrop_path": "/qcpC9lv6VLL4Zw45EveYELyje1w.jpg",
+"first_air_date": "2020-10-05",
+"genre_ids": [
+18,
+10766,
+10751
+],
+"id": 111453,
+"name": "Ghum Hai Kisi Ke Pyaar Mein",
+"origin_country": [
+"IN"
+],
+"original_language": "hi",
+"original_name": "घुम है किसिकी प्यार में",
+"overview": "Virat sacrifices his love to honour the promise he made to a dying man. Trapped between the past and the present, will he find love beyond the chains of duty?",
+"popularity": 1206.343,
+"poster_path": "/uNjnoT3RChs2r7O9pDyx7TNBvIj.jpg",
+"vote_average": 5.8,
+"vote_count": 28
+},
+{
+"backdrop_path": "/3GIt6bMQZ5Lw11oinFksvTKNzoc.jpg",
+"first_air_date": "2023-01-08",
+"genre_ids": [
+18
+],
+"id": 211782,
+"name": "Al Thaman",
+"origin_country": [
+"LB"
+],
+"original_language": "ar",
+"original_name": "الثمن",
+"overview": "As a last resort to afford her son’s cancer treatment, a widowed mother asks her manager for money, but the latter poses one condition: she must spend the night with him.",
+"popularity": 1125.588,
+"poster_path": "/uFEV0Tsns33zKyuc12l4XCBoba7.jpg",
+"vote_average": 10,
+"vote_count": 2
+},
+{
+"backdrop_path": "/ymkFaEO0UdYXKIgcWZ23TlYIRD9.jpg",
+"first_air_date": "2020-11-16",
+"genre_ids": [
+18,
+10766,
+10751
+],
+"id": 113218,
+"name": "Imlie",
+"origin_country": [
+"IN"
+],
+"original_language": "hi",
+"original_name": "इमली",
+"overview": "All Imlie wanted was to create a name for herself in the city. But upon her arrival, she finds herself caught in the middle of Aditya and Malini's love story.",
+"popularity": 1170.417,
+"poster_path": "/brajFHvqeitbp7ifevWpFpirS4S.jpg",
+"vote_average": 5.7,
+"vote_count": 8
+},
+{
+"backdrop_path": "/o8zk3QmHYMSC7UiJgFk81OFF1sc.jpg",
+"first_air_date": "2022-08-22",
+"genre_ids": [
+10766,
+18
+],
+"id": 204095,
+"name": "Mar do Sertão",
+"origin_country": [
+"BR"
+],
+"original_language": "pt",
+"original_name": "Mar do Sertão",
+"overview": "",
+"popularity": 1139.191,
+"poster_path": "/ixgnqO8xhFMb1zr8RRFsyeZ9CdD.jpg",
+"vote_average": 4.5,
+"vote_count": 22
+},
+{
+"backdrop_path": "/fNe1mUuB7fqd4owhgUXkwSNmd9q.jpg",
+"first_air_date": "2022-10-03",
+"genre_ids": [
+18
+],
+"id": 206706,
+"name": "Soar High!",
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "舞いあがれ!",
+"overview": "Iwakura Mai lives with her parents Kota and Megumi and older brother Haruto. Her father Kota runs a small factory in Higashi Osaka, a district that is known for its craftsmen. Mai is shy and withdrawn. But when she visits her grandmother Shoko who lives on Nagasaki’s Goto Islands which has a rich natural environment, she is entranced by the Baramon kites that catch the wind and soar high in the sky. Wanting to fly high in the sky like these kites, Mai’s longing swells into a dream to become a pilot. Even though she works hard, the path to getting there is tougher than she had imagined. As Mai deepens her ties with the people living in her two hometowns of Higashi Osaka and Goto, her dream eventually takes a new form. She gathers enthusiastic friends to build a small electric plane that can fly to and from the islands. Her dream becomes a wing that carries everyone’s dreams and takes off.",
+"popularity": 1109.375,
+"poster_path": "/9eeqetibf0GeXEDpC4vYnU324v8.jpg",
+"vote_average": 5,
+"vote_count": 2
+},
+{
+"backdrop_path": "/7fuUHCDYB59uZzTQK3BYFCf9387.jpg",
+"first_air_date": "2022-09-19",
+"genre_ids": [ ],
+"id": 210734,
+"name": "Leandro Díaz",
+"origin_country": [
+"ES"
+],
+"original_language": "es",
+"original_name": "Leandro Díaz",
+"overview": "",
+"popularity": 1106.059,
+"poster_path": "/d6voDsM0it0GPnhfzXiHWLaX0ff.jpg",
+"vote_average": 4.8,
+"vote_count": 6
+},
+{
+"backdrop_path": "/1aQ0ETcIXFeC0uGcK7NvTg90zWi.jpg",
+"first_air_date": "2022-08-22",
+"genre_ids": [
+10751,
+10766
+],
+"id": 209326,
+"name": "Rajjo",
+"origin_country": [
+"IN"
+],
+"original_language": "hi",
+"original_name": "Rajjo",
+"overview": "",
+"popularity": 1065.064,
+"poster_path": "/rdNwXdMDVDvjOlcXCPOR3m9t43r.jpg",
+"vote_average": 4.4,
+"vote_count": 6
+},
+{
+"backdrop_path": null,
+"first_air_date": "2022-10-03",
+"genre_ids": [
+18
+],
+"id": 209505,
+"name": "Mavro Rodo",
+"origin_country": [
+"GR"
+],
+"original_language": "el",
+"original_name": "Μαύρο Ρόδο",
+"overview": "Indeed, in the new series of MEGA \"Black Rose\" we will see several changes in the case, regarding the book. At the center of our story will be Sister Elizabeth, who has dedicated her life to God. As a child she had contracted meningitis and her parents sent her to Panagia, as a result, when the girl recovered, they urged her to follow the monastic life.After a big earthquake, the monastery shows cracks and huge damages. The abbess asks Sister Elisabeth, who is still a probationary nun, to go to her village outside Ioannina for a while until the damage is repaired.\n\nThere, Sister Elizabeth will attend the party organized by her step-sister and meet the young man who will steal her heart. He, completely in love with her, will chase her to the monastery. This love will put the nun in a dilemma: Should she follow her heart and fall in love or remain in the choice of monastic life?",
+"popularity": 679.066,
+"poster_path": "/5AnWY9onA6a8GJZuDLeeQohh2PG.jpg",
+"vote_average": 4,
+"vote_count": 2
+},
+{
+"backdrop_path": "/7EN05ntpEmpXgmSNCF1m0YfisVb.jpg",
+"first_air_date": "2023-01-16",
+"genre_ids": [
+10766,
+35
+],
+"id": 209117,
+"name": "Never Give Up",
+"origin_country": [
+"BR"
+],
+"original_language": "pt",
+"original_name": "Vai na Fé",
+"overview": "Sol is a hardworking woman who has the chance to work as a backing vocalist for a funk singer and return to dancing, as she did in her youth. Torn between family pressure and passion for the stage, she must face the judgment of her church's members and conflicts with her family. The new chance will make her reconnect with her past in many ways, leading her to find her great youth love.",
+"popularity": 1064.508,
+"poster_path": "/6QNohzb7YUJ6eWZkXAYU8KGIq.jpg",
+"vote_average": 6,
+"vote_count": 2
+},
+{
+"backdrop_path": "/wdtM9fguzCuDVvpR1BvRw3AEmPG.jpg",
+"first_air_date": "2022-10-11",
+"genre_ids": [
+18,
+80,
+9648
+],
+"id": 208249,
+"name": "Game of Witches",
+"origin_country": [
+"KR"
+],
+"original_language": "ko",
+"original_name": "마녀의 게임",
+"overview": "Yu Kyung is a successful woman who is proficient enough to become an executive director of Chunha Group when she started as a secretary. She recently found out her daughter is alive, so she plans to get her back and take her revenge. Meanwhile, Hye Soo is a strong girl who faces challenges head-on. She has a daughter with Ji Ho, and she would do anything for her. However, she gets tragically betrayed by Ji Ho, the love of her life, over power and money. How will those two mothers end their fierce revenge?",
+"popularity": 1090.857,
+"poster_path": "/9bTjPzX48VZGalKEBI6tiknUyLI.jpg",
+"vote_average": 6,
+"vote_count": 2
+},
+{
+"backdrop_path": null,
+"first_air_date": "2002-09-09",
+"genre_ids": [ ],
+"id": 20812,
+"name": "Való Világ",
+"origin_country": [
+"HU"
+],
+"original_language": "hu",
+"original_name": "Való Világ",
+"overview": "",
+"popularity": 1065.025,
+"poster_path": "/kQ6EfC1igZRNSSsnQbLG2mrOLwj.jpg",
+"vote_average": 1.8,
+"vote_count": 6
+},
+{
+"backdrop_path": "/tghyYmdUyLRXwYAQveP7oDOYGqP.jpg",
+"first_air_date": "1972-09-04",
+"genre_ids": [
+10764
+],
+"id": 2051,
+"name": "The Price Is Right",
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "The Price Is Right",
+"overview": "\"Come on down!\" The Price Is Right features a wide variety of games and contests with the same basic challenge: Guess the prices of everyday (or not-quite-everyday) retail items. ",
+"popularity": 1122.911,
+"poster_path": "/x2wMeWFWJhEl0jVp9x5P5wmVBpw.jpg",
+"vote_average": 6.2,
+"vote_count": 61
+},
+{
+"backdrop_path": "/t0tazKR9QaFT8W1Xf1XZTaHoD5u.jpg",
+"first_air_date": "2014-02-03",
+"genre_ids": [ ],
+"id": 68683,
+"name": "Echte verhalen: De buurtpolitie",
+"origin_country": [
+"VN"
+],
+"original_language": "vi",
+"original_name": "Echte verhalen: De buurtpolitie",
+"overview": "",
+"popularity": 1125.686,
+"poster_path": "/hFcluhACmpObsa5syJO0x6mQRio.jpg",
+"vote_average": 8,
+"vote_count": 1
+},
+{
+"backdrop_path": null,
+"first_air_date": "",
+"genre_ids": [
+35
+],
+"id": 213017,
+"name": "Lo Zoo di 105",
+"origin_country": [
+"IT"
+],
+"original_language": "it",
+"original_name": "Lo Zoo di 105",
+"overview": "",
+"popularity": 1003.466,
+"poster_path": "/6KL71OV5wHQGk5KZMP3qp7Mj5HA.jpg",
+"vote_average": 5,
+"vote_count": 1
+},
+{
+"backdrop_path": "/o5GsA1G5YEruuUNOYvWjlArIC37.jpg",
+"first_air_date": "2022-09-19",
+"genre_ids": [
+10766
+],
+"id": 210506,
+"name": "Sangue Oculto",
+"origin_country": [
+"PT"
+],
+"original_language": "pt",
+"original_name": "Sangue Oculto",
+"overview": "",
+"popularity": 1042.333,
+"poster_path": "/myCEG6C5Nk181jXzBek5MQEXpM2.jpg",
+"vote_average": 5.1,
+"vote_count": 8
+}
+],
+"total_pages": 7251,
+"total_results": 145014

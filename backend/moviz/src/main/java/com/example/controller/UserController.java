@@ -15,12 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.repository.UserRepository;
-import com.sun.jdi.connect.Transport;
-import java.net.Authenticator;
-import java.net.PasswordAuthentication;
-import java.util.Properties;
+
 import java.util.UUID;
-import javax.websocket.Session;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;
@@ -138,10 +134,10 @@ private void sendResetLinkByEmail(User user, String resetToken) {
     // Corps de l'e-mail
     String body = "Bonjour " + user.getUsername() + ",\n\n";
     body += "Vous avez demandé la réinitialisation de votre mot de passe. Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :\n\n";
-    body += "https://monsite.com/reset-password?token=" + resetToken + "\n\n";
+   // body += "https://monsite.com/reset-password?token=" + resetToken + "\n\n";
     body += "Si vous n'avez pas demandé la réinitialisation de mot de passe, ignorez cet e-mail.\n\n";
     body += "Cordialement,\n";
-    body += "L'équipe de monsite.com";
+    body += "L'équipe wasmed";
 
     // Création de l'objet SimpleMailMessage pour l'e-mail
     SimpleMailMessage message = new SimpleMailMessage();

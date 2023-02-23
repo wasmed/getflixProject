@@ -4,14 +4,11 @@
  */
 package com.example.repository;
 
-import com.example.entity.Films;
 
-
+import com.example.entity.FilmsTopRated;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface FilmsRepository extends JpaRepository<Films,Long>{
-
-   // public void saveAll(Object results);
-     
+public interface FilmsTopRatedRepository extends JpaRepository<FilmsTopRated,Long> {
+    
 }

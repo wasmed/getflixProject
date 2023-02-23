@@ -4,14 +4,10 @@
  */
 package com.example.entity;
 
-
-
-import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,12 +17,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "filmData")
-public class Films {
-    
-
-        
-     @Id
+@Table(name = "filmTopRated")
+public class FilmsTopRated {
+ @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
      
@@ -51,17 +44,5 @@ private Long id;
     private Double vote_average;
     private Integer vote_count;
     private String origin_country;
-    
-   
-      
-
-    
-
-   
-  
-
-   
-    
-    
     
 }
